@@ -5,12 +5,19 @@ def show():
 show()
 print(x)
 
+o/p:
+5
+10
+
 def outer ():
     x=10
     def inner():
         print(x)
     inner()
 outer()
+
+o/p:
+10
 
 x="global"
 def outer():
@@ -20,4 +27,9 @@ def outer():
     inner()
     print("outer:",x)
 outer()
+
 print("global:",x)
+
+o/p:
+outer:outer
+global:global
